@@ -1,0 +1,21 @@
+<!--pages/profile-bloghistory/profile-bloghistory.wxml-->
+<view>
+  <block wx:for="{{ blogList }}" wx:key="_id">
+    <view class="blog-panel">
+      <v-blog-card
+        blog="{{ item }}"
+        bind:tap="goComment"
+        data-blogid="{{ item._id }}"
+      ></v-blog-card>
+
+      <v-blog-ctrl
+        blogId="{{ item._id }}"
+        blog="{{ item }}"
+        iconfont="iconfont"
+        icon-pinglun="icon-pinglun"
+        icon-fenxiang="icon-fenxiang"
+      ></v-blog-ctrl>
+    </view>
+  </block>
+</view>
+<v-no-more show="{{ hasMore }}"></v-no-more>

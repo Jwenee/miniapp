@@ -1,0 +1,4 @@
+<!--components/no-more/no-more.wxml-->
+<view class="container" hidden="{{ show }}">
+  <text>{{ content }}</text>
+</view>

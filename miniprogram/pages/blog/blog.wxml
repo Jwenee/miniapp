@@ -1,0 +1,35 @@
+<!--miniprogram/pages/blog/blog.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="publish-container" bind:tap="onPublish">
+      <i class="iconfont icon-fabu"></i>
+    </view>
+    <view class="search-container">
+      <v-search iconfont="iconfont" icon-sousuo="icon-sousuo" bind:search="onSearch"></v-search>
+    </view>
+  </view>
+
+  <view class="blog-list">
+    <block wx:for="{{ blogList }}" wx:key="_id">
+      <view class="blog-panel">
+        <v-blog-card blog="{{ item }}" data-blogid="{{ item._id }}" bind:tap="goComment"></v-blog-card>
+        <v-blog-ctrl
+          blogId="{{ item._id }}"
+          blog="{{ item }}"
+          iconfont="iconfont"
+          icon-pinglun="icon-pinglun"
+          icon-fenxiang="icon-fenxiang"
+        ></v-blog-ctrl>
+      </view>
+    </block>
+  </view>
+
+  <v-login 
+    modalShow="{{ modalShow }}"
+    bind:loginok="onLoginSuccess"
+    bind:loginfail="onLoginFail"
+  >
+  </v-login>
+</view>
+
+<v-no-more show="{{ hasMore }}"></v-no-more>

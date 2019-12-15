@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "v-blog-card": "/components/blog-card/blog-card",
+    "v-blog-ctrl": "/components/blog-ctrl/blog-ctrl",
+    "v-no-more": "/components/no-more/no-more"
+  },
+  "navigationBarTitleText": "我的发现"
+}

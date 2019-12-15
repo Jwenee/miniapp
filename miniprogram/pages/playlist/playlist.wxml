@@ -1,0 +1,15 @@
+<!--miniprogram/pages/playlist/playlist.wxml-->
+<swiper indicator-dots="true" autoplay="true">
+  <block wx:for="{{ swiperImgUrls }}" wx:key="url">
+    <swiper-item>
+      <image src="{{ item.url }}" mode="widthFix"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="playlist-container">
+  <block wx:for="{{ playlist }}" wx:key="_id">
+    <v-playlist playlist="{{ item }}"></v-playlist>
+  </block>
+</view>
+
+<v-no-more show="{{ hasMore }}"></v-no-more>

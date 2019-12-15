@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "v-playlist": "/components/playlist/playlist",
+    "v-no-more": "/components/no-more/no-more"
+  },
+  "enablePullDownRefresh": true
+}

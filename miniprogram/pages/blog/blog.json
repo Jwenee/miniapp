@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "v-search": "/components/search/search",
+    "v-login": "/components/login/login",
+    "v-blog-card": "/components/blog-card/blog-card",
+    "v-blog-ctrl": "/components/blog-ctrl/blog-ctrl",
+    "v-no-more": "/components/no-more/no-more"
+  },
+  "navigationBarTitleText": "发现",
+  "enablePullDownRefresh": true
+}

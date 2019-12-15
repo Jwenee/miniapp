@@ -1,0 +1,9 @@
+/* components/no-more/no-more.wxss */
+.container {
+  width: 100%;
+  height: 48rpx;
+  font-size: 24rpx;
+  color: #999;
+  text-align: center;
+  line-height: 48rpx;
+}
